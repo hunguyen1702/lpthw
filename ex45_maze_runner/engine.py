@@ -17,5 +17,5 @@ class Engine(object):
             next_room_name = current_room.enter(self.hero)
             current_room = self.maze_map.next_room(next_room_name)
 
-        last_room.enter()
+        last_room.enter(self.hero)
 
